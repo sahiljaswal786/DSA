@@ -1,0 +1,2 @@
+Deletion : head , tail , kth position , delete with k value 
+Insertion : head , tail , before kth position , before given val 
