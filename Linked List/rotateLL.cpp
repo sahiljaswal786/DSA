@@ -64,11 +64,11 @@ node* firstNode (node* temp, int k){
 
 node* rotate(node* head , int k){
     node* tail = head;
-    int len = 0;
+    int len = 1;
     
     while(tail->next != NULL){
-        len ++;
         tail = tail->next;
+        len ++;
     }
 
     if (k % len == 0) return head;
