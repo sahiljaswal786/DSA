@@ -15,7 +15,7 @@ int subsetSum (int index , int target,vector<int>& nums, vector<vector<int>>& dp
     int noTaken = subsetSum (index - 1 , target, nums , dp);
     int Taken = 0;
     if(nums[index] <= target){
-        Taken = 1 + subsetSum(index - 1, target - nums[index] , nums , dp);
+        Taken = subsetSum(index - 1, target - nums[index] , nums , dp);
     }
 
     return dp[index][target] = Taken + noTaken;
