@@ -1,6 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// self defined data type for linked list
+
 class node{
     public:
     int data ;
